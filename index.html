@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" />
+<style type="text/css">
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arvo', serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+  body {
+   overflow-x: hidden;  /* Hide scrollbars */
+}
+
+
+  #head-img{
+    width: 100%;
+    height: 100%;
+  }
+  #header-img{
+    width: 52px;
+    height: 52px;
+    z-index: 1
+  }
+  .navbar{
+    background-color: #dadada;
+  }
+  
+ 
+  .card{
+    border-radius: 30px;
+    border-bottom: 5px solid  #FF7F50;
+  } 
+
+   .card:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+    top: -4px;
+    border-top: 5px solid  #FF7F50;
+    border-right: 5px solid  #FF7F50;
+    border-left: 5px solid  #FF7F50;
+    background-color: white;
+  }
+
+
+
+#header-title{
+  padding-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #4CB7A5;
+  padding-bottom: 20px;
+}
+.para{
+  padding-left: 30px;
+  padding-top: 300px;
+}
+.title-head{
+  text-align: left;
+  font-size: 3rem;
+  color: #1B3F8B;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.head-para{
+  text-align: left;
+ font-size: 1rem;
+  color: #26466D;
+
+}
+.head-btn{
+  width: 90px;
+  background-color:  #FF7F50;
+}
+.wall-imgg{
+  float: right;
+  width:100%;
+  margin-left: 100px;
+}
+.navbar-brand{
+  margin-left: 30px;
+  color: #FF7F50;
+  font-weight: bold;
+
+}
+.nav-link{
+  font-weight: bold;
+  color: #232b2b!important;
+}
+.card-title{
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #1B3F8B;
+}
+#company{
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.card-text{
+  color: #26466D;
+}
+
+.inform .info-title{
+  color: #FF7F50;
+}
+
+.inform {
+  background-color: #f0eee4;
+  padding-top: 80px;
+}
+.inform h1{
+  font-weight: bold;
+  color: #1B3F8B;
+}
+.inform .infor p{
+  color: #26466D;
+}
+.fa{
+  color: #FF7F50;
+  float: left;
+  padding-right: 30px;
+}
+.description{
+   background-color: #f0eee4;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.description h4{
+  color: #1B3F8B;
+  text-align: left;
+  font-weight: bold;
+}
+.description p{
+  color: #26466D;
+  text-align: left;
+}
+.description .features{
+  display: flex;
+  flex-direction: column;
+}
+.description .feature-main{
+padding-top: 30px;
+}
+.second{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #fffcec;
+  margin-top: 80px;
+}
+iframe{
+  width: 500px;
+  height: 500px;
+}
+
+#message {
+  background:#11BCAF;
+  font-weight: bold;
+  font-size: 14px;
+  color: #171D23;
+  margin: 00;
+}
+.message {  
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.login_bar {
+  width: 316px;
+  height: 50px;
+  background: white;
+  border-radius: 10px;
+  top: 50%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.form-control{
+  height: 50px;
+  width: 220px;
+  margin-left: 7px;
+  border-top-right-radius: -0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+form #submit{
+  height: 50px;
+  width: 105px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color:  #FF7F50;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+ .navbar-toggler{
+    background-color: grey;
+}
+#company .row{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+</style>
+</head>
+<body>
+<header id="header">
+   <img src="https://www.dynamicx.co.nz/stock-photo-preview/102412284/1000/ist_20278_02041.jpg" class="fixed-top" id="header-img">
+	<nav class="navbar navbar-expand-lg fixed-top " id="nav-bar">
+  <a class="navbar-brand" href="#"><b>Spoons</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#header-title">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pl-3" href="#company">Features</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link pl-3" href="#review">Review</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link pl-3" href="#product">Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link pl-3" href="#message">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="" id="header-title">
+  <div class="row">
+     <div class="col-lg-6 col-md-6 col-12">
+    <div class="para">
+      <h1 class="title-head">Stainless and Light Weight Spoon we ever made.</h1>
+      <p class="head-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+     <a href="#header-title" class=" head-btn btn btn-secondary">Visit</a>
+    </div>
+  </div>
+  <div class="col-lg-6 col-md-8 col-12">
+    <div class="wall-img">
+      <img class="wall-imgg" src="images/wall.jpg" alt="Card image">
+    </div>
+  </div>
+</div>
+</header>
+
+<section>
+    <div class="container" id="company">
+  <div class="row text-center">
+   <div class="col-lg-4 col-md-8 col-12">
+ <div class="card shadow p-3 mb-5 bg-white " style="width:300px">
+    <img class="card-img-top" src="images/wall.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">New Design</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    
+    </div>
+  </div>
+    </div>
+
+    <div class="col-lg-4 col-md-8 col-12">
+   <div class="card shadow p-3 mb-5 bg-white " style="width:300px">
+    <img class="card-img-top" src="images/wall.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Stainless Steel</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+    </div>
+  </div>
+    </div>
+
+    <div class="col-lg-4 col-md-8 col-12">
+   <div class="card shadow p-3 mb-5 bg-white " style="width:300px">
+    <img class="card-img-top" src="images/wall.jpg" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Light weight</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class="inform text-center" id="review">
+    <p class="info-title">Features</p>
+    <div class="infor">
+    <h1 class="text-capitalize">This Spoon has a lot of Excellent Features</h1>
+    <p class="container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam. Donec eget mi sed diam pharetra sollicitudin. Ut odio eros, dictum ac risus dictum, venenatis ultricies nulla.</p>
+    </div>
+  <div class="row description">
+    <div class="col-lg-4 col-md-4 col-12">
+      <div class="column ml-5">
+        <div class="feature-main">
+          <i class=" fa-3x fa fa-bomb" aria-hidden="true"></i>
+          <div class="column features">
+            <div>
+          <h4>Feature one</h4>
+          </div>
+          <div>
+          <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam. </p>
+          </div>
+        </div>
+        </div>
+        <div class="feature-main">
+          <i class=" fa-3x fa fa-hand-rock-o" aria-hidden="true"></i>
+           <div class="column features">
+            <div>
+          <h4>Feature two</h4>
+          </div>
+          <div>
+          <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam. </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+      <img src="images/wall.jpg" style="width:300px">
+    </div>
+    <div class="col-lg-4 col-md-4 col-12">
+       <div class="column mr-5">
+        <div class="feature-main">
+          <i class="fa-3x fa fa-heart-o" aria-hidden="true"></i>
+          <div class="column features">
+            <div>
+          <h4>Feature three</h4>
+          </div>
+          <div>
+          <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam. </p>
+          </div>
+        </div>
+        </div>
+        <div class="feature-main">
+          <i class=" fa-3x fa fa-clock-o" aria-hidden="true"></i>
+          <div class="column features">
+            <div>
+          <h4>Feature four</h4>
+          </div>
+          <div>
+          <p > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam. </p>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+
+<section>
+  <div class="container second pl-3 mb-5" id="product">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-12">
+      <div class="cardd">
+    <div class="card-body">
+      <h2 class="card-title">The making of our spoon</h2>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam efficitur turpis vel sollicitudin aliquam.</p>
+       <a href="#header-title" class=" head-btn btn btn-secondary">Visit</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-lg-6 col-md-12 col-12">
+      <iframe src="https://www.youtube.com/embed/bB5m6Q6W8Dc" id="video"></iframe>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="message">
+  <div class="container message">
+  <div class="login_bar">
+ <form id="form" action="https://www.freecodecamp.com/email-submit">
+  <div class="row">
+    <div class="form-group">
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
+  </div>
+  <div>
+  <input type="submit" id="submit" class="button btn btn-secondary">
+</div>
+</div>
+</form>
+  </div>
+</div>
+</section>
+
+<script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
